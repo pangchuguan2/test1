@@ -16,35 +16,22 @@ end type
 global test test
 
 on test.create
-appname = "test"
-message = create message
-sqlca = create transaction
-sqlda = create dynamicdescriptionarea
-sqlsa = create dynamicstagingarea
-error = create error
+appname="test"
+message=create message
+sqlca=create transaction
+sqlda=create dynamicdescriptionarea
+sqlsa=create dynamicstagingarea
+error=create error
 end on
 
 on test.destroy
-destroy( sqlca )
-destroy( sqlda )
-destroy( sqlsa )
-destroy( error )
-destroy( message )
+destroy(sqlca)
+destroy(sqlda)
+destroy(sqlsa)
+destroy(error)
+destroy(message)
 end on
-//test
-//test2
-//abc
-//vb
-//ac
-//cdk
-//sf
-//testjj
-//tds
-//sfx
-//123
-//546
-//7877
-//hjf
-//fdad  123456
-//abv
-//dssdds
+
+event open;//test
+end event
+
