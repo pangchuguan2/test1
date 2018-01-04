@@ -4,6 +4,8 @@ global type win2 from window
 end type
 type ov_1 from oval within win2
 end type
+type r_1 from rectangle within win2
+end type
 end forward
 
 global type win2 from window
@@ -19,16 +21,20 @@ long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
 ov_1 ov_1
+r_1 r_1
 end type
 global win2 win2
 
 on win2.create
 this.ov_1=create ov_1
-this.Control[]={this.ov_1}
+this.r_1=create r_1
+this.Control[]={this.ov_1,&
+this.r_1}
 end on
 
 on win2.destroy
 destroy(this.ov_1)
+destroy(this.r_1)
 end on
 
 type ov_1 from oval within win2
@@ -37,6 +43,16 @@ integer linethickness = 4
 long fillcolor = 1073741824
 integer x = 1701
 integer y = 516
+integer width = 329
+integer height = 176
+end type
+
+type r_1 from rectangle within win2
+long linecolor = 33554432
+integer linethickness = 4
+long fillcolor = 1073741824
+integer x = 814
+integer y = 592
 integer width = 329
 integer height = 176
 end type
