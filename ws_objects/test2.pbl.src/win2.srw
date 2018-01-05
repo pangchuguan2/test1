@@ -37,6 +37,9 @@ destroy(this.ov_1)
 destroy(this.r_1)
 end on
 
+event open;//123
+end event
+
 type ov_1 from oval within win2
 long linecolor = 33554432
 integer linethickness = 4
