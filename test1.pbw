@@ -5,4 +5,3 @@ Save Format v3.0(19990112)
 @end;
 DefaultTarget "test2.pbt";
 DefaultRemoteTarget "test2.pbt";
-//test1
