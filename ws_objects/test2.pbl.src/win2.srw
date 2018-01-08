@@ -37,7 +37,7 @@ destroy(this.ov_1)
 destroy(this.r_1)
 end on
 
-event open;//123abc
+event open;//123abcs
 end event
 
 type ov_1 from oval within win2
